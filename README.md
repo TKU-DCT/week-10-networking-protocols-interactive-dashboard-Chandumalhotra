@@ -61,6 +61,16 @@ Make sure log.db is in the same directory.
  Code pushed to GitHub
  ---
 
+---
+## Execution log
+
+I executed `main.py` (to generate `log.db`) on 2025-11-19 to create sample entries for the dashboard. Verified that `log.db` exists in the repository root and that `app.py` can read from it. To reproduce locally:
+
+```powershell
+& ".venv/Scripts/python.exe" main.py
+streamlit run app.py
+```
+
 ## Bonus (Optional)
 
 Add a date filter using st.date_input
