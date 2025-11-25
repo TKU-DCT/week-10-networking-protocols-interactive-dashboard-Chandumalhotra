@@ -3,7 +3,7 @@
 ## Objective
 
 This week, you will enhance your Streamlit dashboard with **interactive controls** and use **real data**
-from your monitoring system (this repo contains sample DBs: `log.db7.db` and `log.db8.db` generated in Week 7–8).
+from your monitoring system. This repository now includes two sample databases (Week 7 and Week 8): `log.db7.db` and `log.db8.db`.
 
 ---
 
@@ -13,7 +13,7 @@ Your dashboard can read the databases produced in:
 - Week 7 — SQLite logging sample: `log.db7.db`
 - Week 8 — Alert updates sample: `log.db8.db`
 
-If these files are missing or empty, re-run `main.py` in Week 8 to generate sample data.
+If these files are missing or you want to generate fresh data, there's a small helper script included — `generate_sample_dbs.py` — that creates both `log.db7.db` and `log.db8.db` in the repository root.
 
 ---
 
@@ -47,7 +47,7 @@ If these files are missing or empty, re-run `main.py` in Week 8 to generate samp
 streamlit run app.py
 ```
 
-Make sure `log.db7.db` and/or `log.db8.db` are in the same directory as `app.py` (the repo root).
+Make sure `log.db7.db` and/or `log.db8.db` are in the same directory as `app.py` (the repo root). This repository already contains the sample DB files so the app should work out-of-the-box.
 
 ---
 
@@ -62,6 +62,11 @@ Below is a sample screenshot (assets/screenshots/dashboard_screenshot.svg) showi
 1. Run the app locally:
 
 ```powershell
+# (Optional) regenerate the sample DBs
+# Windows PowerShell example (use your Python executable path):
+C:/path/to/python.exe generate_sample_dbs.py
+
+# run the dashboard
 streamlit run app.py
 ```
 
@@ -97,10 +102,13 @@ When uploading to your course/learning platform, attach the saved image file and
 ---
 ## Execution log
 
-I executed `main.py` (to generate a sample DB) on 2025-11-19 to create sample entries for the dashboard. This repo includes `log.db7.db` and `log.db8.db` in the root — `app.py` can read them. To reproduce locally:
+This repo already contains `log.db7.db` and `log.db8.db` in the root — `app.py` can read them. To (re)generate locally:
 
 ```powershell
-& ".venv/Scripts/python.exe" main.py
+# (re)generate sample DBs using the included generator
+C:/path/to/python.exe generate_sample_dbs.py
+
+# start the Streamlit app
 streamlit run app.py
 ```
 
