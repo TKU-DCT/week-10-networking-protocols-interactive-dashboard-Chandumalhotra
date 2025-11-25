@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <style>
+    .bg{fill:#0f1724}
+    .card{fill:#0b1220;stroke:#1f2937;stroke-width:2;rx:8}
+    .text{fill:#e6eef6;font-family:Inter, Arial, sans-serif}
+    .hint{fill:#9fb0c7;font-size:14px}
+    .title{font-size:20px;font-weight:700}
+    .label{font-size:13px;fill:#cfe3f8}
+    .btn{fill:#1f77b4}
+  </style>
+
+  <rect class="bg" width="1200" height="700" rx="8"/>
+
+  <!-- Sidebar -->
+  <g transform="translate(20,20)">
+    <rect class="card" width="240" height="660" rx="8"/>
+    <text x="20" y="40" class="text title">📂 Navigation</text>
+    <rect x="20" y="60" width="200" height="36" rx="6" fill="#0f172b" stroke="#213449"/>
+    <text x="40" y="85" class="label">Dashboard (selected)</text>
+
+    <text x="20" y="130" class="label">Dataset</text>
+    <rect x="20" y="140" width="200" height="28" rx="4" fill="#09202d"/>
+    <text x="30" y="160" class="hint">Week 7 (log.db7.db)</text>
+
+    <text x="20" y="190" class="label">Filters</text>
+    <rect x="20" y="200" width="200" height="24" rx="4" fill="#09202d"/>
+    <text x="30" y="218" class="hint">Ping status: UP</text>
+    <rect x="20" y="230" width="200" height="24" rx="4" fill="#09202d"/>
+    <text x="30" y="248" class="hint">Min CPU: 10%</text>
+
+    <rect x="20" y="280" width="90" height="28" rx="4" class="btn"/>
+    <text x="46" y="300" class="text">Refresh</text>
+
+    <text x="20" y="350" class="label">Auto-refresh</text>
+    <rect x="20" y="360" width="90" height="20" rx="4" fill="#052033"/>
+    <text x="30" y="375" class="hint">5s</text>
+
+  </g>
+
+  <!-- Top header / metrics -->
+  <g transform="translate(280,20)">
+    <text class="text title" x="0" y="30">🌐 Networking & Protocols — Dashboard</text>
+    <g transform="translate(0,50)">
+      <rect width="880" height="80" rx="8" class="card"/>
+      <text x="20" y="28" class="label">Records</text>
+      <text x="20" y="55" class="text">1,234</text>
+
+      <text x="220" y="28" class="label">Avg CPU</text>
+      <text x="220" y="55" class="text">34.5%</text>
+
+      <text x="420" y="28" class="label">Avg Memory</text>
+      <text x="420" y="55" class="text">58.2%</text>
+
+      <text x="620" y="28" class="label">Avg Disk</text>
+      <text x="620" y="55" class="text">24.9%</text>
+    </g>
+  </g>
+
+  <!-- Charts area -->
+  <g transform="translate(280,140)">
+    <rect class="card" width="880" height="220" rx="8"/>
+    <text x="18" y="24" class="label">📈 Resource Usage Over Time</text>
+    <!-- mock chart lines -->
+    <path d="M40 60 C100 30 200 120 280 80 C360 40 460 140 560 110 C660 80 760 150 840 120" stroke="#36b37e" stroke-width="3" fill="none"/>
+    <path d="M40 120 C100 90 200 170 280 130 C360 100 460 200 560 150 C660 120 760 210 840 170" stroke="#4bc0f0" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- Table area -->
+  <g transform="translate(280,390)">
+    <rect class="card" width="880" height="260" rx="8"/>
+    <text x="20" y="26" class="label">Filtered Records (showing 10 of 1234)</text>
+    <!-- table rows -->
+    <rect x="20" y="40" width="840" height="24" fill="#0b1220" rx="4"/>
+    <text x="28" y="58" class="hint">2025-11-19 10:00 — /cpu=32.5 /memory=55.1 /ping=UP (24 ms)</text>
+    <rect x="20" y="70" width="840" height="24" fill="#071018" rx="4"/>
+    <text x="28" y="88" class="hint">2025-11-19 10:10 — /cpu=40.1 /memory=60.2 /ping=DOWN (-)</text>
+
+    <text x="680" y="220" class="hint">Download CSV</text>
+    <rect x="560" y="200" width="120" height="28" rx="4" class="btn"/>
+  </g>
+
+</svg>

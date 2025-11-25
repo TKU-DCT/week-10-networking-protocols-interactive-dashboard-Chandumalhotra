@@ -49,6 +49,40 @@ streamlit run app.py
 
 Make sure `log.db7.db` and/or `log.db8.db` are in the same directory as `app.py` (the repo root).
 
+---
+
+## Screenshot (example)
+
+Below is a sample screenshot (assets/screenshots/dashboard_screenshot.svg) showing the Dashboard page with filters and charts. Use it as a reference when capturing your own screenshot for submission.
+
+![Dashboard example](assets/screenshots/dashboard_screenshot.svg)
+
+### Where you should take your own screenshot
+
+1. Run the app locally:
+
+```powershell
+streamlit run app.py
+```
+
+2. In the sidebar select:
+   - Dataset: Week 7 or Week 8 (or Both)
+   - Set Ping status (All / UP / DOWN)
+   - Set a CPU threshold (e.g., 10%)
+   - (Optionally) enable Auto refresh or press Refresh
+
+3. Make sure the Dashboard page is selected from the sidebar so the top metrics, charts (Resource Usage), and the filtered table are visible.
+
+4. Capture a screenshot that clearly shows:
+   - The sidebar with the chosen filters
+   - The top metrics (Records, Avg CPU/Memory/Disk)
+   - The Resource Usage chart
+   - Part of the Filtered Records table
+
+5. Save the screenshot as PNG or JPG and include it in your submission (for example, place it in `assets/screenshots/your_screenshot.png`).
+
+When uploading to your course/learning platform, attach the saved image file and include the GitHub repo link.
+
 ## Submission Checklist
 
  app.py includes sidebar, dataset selection (Week 7 / Week 8 / Both), filters, refresh, and CSV export
