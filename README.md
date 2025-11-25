@@ -3,18 +3,17 @@
 ## Objective
 
 This week, you will enhance your Streamlit dashboard with **interactive controls** and use **real data**
-from your monitoring system (`log.db` generated in Week 7–8).
+from your monitoring system (this repo contains sample DBs: `log.db7.db` and `log.db8.db` generated in Week 7–8).
 
 ---
 
 ## Data Source
 
-Your dashboard uses the **same database** you created in:
-- Week 7 (SQLite Logging)
-- Week 8 (Alert System Updates)
+Your dashboard can read the databases produced in:
+- Week 7 — SQLite logging sample: `log.db7.db`
+- Week 8 — Alert updates sample: `log.db8.db`
 
-If your `log.db` file is missing or empty, please re-run your Week 8 `main.py`
-to generate log entries before running this assignment.
+If these files are missing or empty, re-run `main.py` in Week 8 to generate sample data.
 
 ---
 
@@ -48,11 +47,11 @@ to generate log entries before running this assignment.
 streamlit run app.py
 ```
 
-Make sure log.db is in the same directory.
+Make sure `log.db7.db` and/or `log.db8.db` are in the same directory as `app.py` (the repo root).
 
 ## Submission Checklist
 
- app.py includes sidebar, filters, and refresh
+ app.py includes sidebar, dataset selection (Week 7 / Week 8 / Both), filters, refresh, and CSV export
 
  Charts render correctly
 
@@ -64,7 +63,7 @@ Make sure log.db is in the same directory.
 ---
 ## Execution log
 
-I executed `main.py` (to generate `log.db`) on 2025-11-19 to create sample entries for the dashboard. Verified that `log.db` exists in the repository root and that `app.py` can read from it. To reproduce locally:
+I executed `main.py` (to generate a sample DB) on 2025-11-19 to create sample entries for the dashboard. This repo includes `log.db7.db` and `log.db8.db` in the root — `app.py` can read them. To reproduce locally:
 
 ```powershell
 & ".venv/Scripts/python.exe" main.py
