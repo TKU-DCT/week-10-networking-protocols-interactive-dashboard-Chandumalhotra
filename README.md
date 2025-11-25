@@ -111,3 +111,11 @@ Add a date filter using st.date_input
 Display alert count (how many records exceeded thresholds)
 
 Add Dark Mode toggle in the Settings page
+Alternatively, you can generate convenient sample DB files that the dashboard expects
+(log.db7.db and log.db8.db) by running the helper script included in this repo:
+
+`powershell
+python create_sample_dbs.py
+`
+This will create two sample SQLite files in the repository root which the dashboard
+will automatically discover.
